@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @category Extrembler
+* @package Extrembler_Base
+* @author  Extrembler <gaurangpadhiyar1993@gmail.com>
+*/
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <extrembler translate="title">
+                        <title>Extrembler</title>
+                        <sort_order>100</sort_order>
+                    </extrembler>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

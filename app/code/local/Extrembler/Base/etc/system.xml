@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @category Extrembler
+* @package Extrembler_Base
+* @author  Extrembler <gaurangpadhiyar1993@gmail.com>
+*/
+-->
+<config>
+    <tabs>
+        <extrembler translate="label">
+            <label>
+                <![CDATA[
+                    <div id="extremblerlabel">Extrembler</div>
+                    <script>
+                        document.observe('dom:loaded', function() {
+                            $('extremblerlabel').style.background = "url('data:image/png;base64,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')";
+                        });
+                    </script>
+                    <style>
+                        #extremblerlabel{
+                            background-position: 0px 50% !important;
+                            background-repeat: no-repeat !important;
+                            text-indent: -9999px;
+                            cursor: auto;
+                            padding: 7px;
+                        }
+                        .extremblerlabelhover{
+                            visibility: visible;
+                            opacity: 1;
+                            top: 110px;
+                            left: 0px;
+                            z-index: 999;
+                            padding: 10px;
+                            -webkit-box-shadow: 0 0 20px rgba(0,0,0, .75));
+                            -moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
+                            box-shadow: 0 0 20px rgba(0,0,0, .75);
+                            -webkit-border-radius: 8px;
+                            -moz-border-radius: 8px;
+                            border-radius:8px;
+                            font-family: 'Droid Sans', sans-serif;
+                            font-size:12px;
+                            line-height:18px;
+                            text-align: center;
+                            color: #495a62;
+                            padding-bottom:20px;
+                        }
+                    </style>
+                ]]>
+            </label>
+            <sort_order>100</sort_order>
+        </extrembler>
+    </tabs>
+</config>

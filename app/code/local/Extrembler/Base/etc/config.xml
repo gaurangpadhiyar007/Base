@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<!--
+/**
+* @category Extrembler
+* @package Extrembler_Base
+* @author  Extrembler <gaurangpadhiyar1993@gmail.com>
+*/
+-->
+<config>
+	<modules>
+		<Extrembler_Base>
+			<version>0.1.0</version>
+		</Extrembler_Base>
+	</modules>
+    <global>
+        <blocks>
+            <extremblerbase>
+                <class>Extrembler_Base_Block</class>
+            </extremblerbase>
+        </blocks>
+        <helpers>
+            <extremblerbase>
+                <class>Extrembler_Base_Helper</class>
+            </extremblerbase>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <extremblerbase>
+                <use>admin</use>
+                <args>
+                    <module>Extrembler_Base</module>
+                    <frontName>extremblerbase</frontName>
+                </args>
+            </extremblerbase>
+        </routers>
+    </admin>
+</config>
